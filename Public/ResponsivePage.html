@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+          @media screen and (orientation:landscape)
+          {
+            .con
+            { 
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+            }
+            header
+            {
+                grid-row: 1;
+                grid-column: 1/4;
+            }
+            section
+            {
+                display: none;
+                height: 500px;
+                grid-row: 2;
+                grid-column: 1/4;
+            }
+            main
+            {
+                height: 600px;
+                grid-row: 2;
+                grid-column: 1/4;
+            }
+            footer
+            {
+                margin-top: 10px;
+                text-align: center;
+                grid-row: 3;
+                grid-column: 1/4;
+            }
+            .nav-items
+            {
+                box-shadow: 2px 2px 4px gray;
+                display: flex;
+                margin-top: 20px;
+                padding: 15px;
+            }
+           .nav-i
+            {
+               justify-content: space-between;
+               text-align: center;
+               display: flex;
+               margin-left: 250px;
+               margin-top: 10px;
+            }
+            .nav-i span
+            {
+                
+                width: 80px;
+            }
+            .head-bi
+            {
+                justify-content: space-between;
+              text-align: center;
+                margin-top: 10px;
+                margin-left: 200px;
+            }
+            .nav-brand
+            {
+                font-size: 30px;
+                font-weight: bolder;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            .brand-title
+            {
+                margin-top: 10px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                word-spacing: 20px;
+                padding: 15px;
+            }
+            .banner-women
+            {
+                
+                background-image: url("/src/w1.jpg");
+                background-size: cover;
+                width: 500px;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                color: white;
+                margin-top: 5px;
+            }
+            .main-container
+            {
+                display: flex;
+                grid-gap: 10px;
+            }
+            .bi-search,.bi-person,.bi-heart,.bi-cart
+            {
+                padding: 10px;
+            }
+            .bi-star-fill
+            {
+                color: yellow;
+            }
+          }
+          @media screen and (orientation:portrait) 
+          {
+            .con
+            {
+                display: grid;
+                grid-template-columns: 12fr;
+            }
+            header
+            {
+                grid-row: 1;
+               
+            }
+            section
+            {
+                display: none;
+                grid-row: 2;
+               
+            }
+            main
+            {
+                height: 600px;
+                grid-row: 2;
+                
+            }
+            footer
+            {
+                text-align: center;
+                grid-row: 3;
+               
+            }
+            .banner-women
+            {
+                background-image: url("/src/w1.jpg");
+                background-size: cover;
+                width: 500px;
+                color: white;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 5px;
+            }
+            .nav-items
+            {
+                box-shadow: 2px 2px 2px 3px gray;
+                display: flex;
+                margin-top: 20px;
+            }
+           .nav-i
+            {
+               justify-content: space-between;
+               text-align: center;
+               display: flex;
+               margin-left: 5px;
+               grid-gap: 5px;
+               margin-top: 10px;
+            }
+           
+            .head-bi
+            {
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+            .nav-brand
+            {
+                font-size: 30px;
+                font-weight: bolder;
+                margin-bottom: 10px;
+                margin-left: 0px;
+            }
+            .brand-title
+            {
+                margin-top: 20px;
+                background-color: black;
+                color: white;
+                padding: 10px;
+            }
+            .main-container
+            {
+                grid-gap: 10px;
+            }
+            .bi-star-fill
+            {
+                color: yellow;
+            }
+          }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="con">
+        <header>
+          <div class="nav-items">
+               <div class="nav-brand"> Shopper.</div>
+               <div class="nav-i">
+                  <span>Home</span>
+                  <span>Catalog</span>
+                  <span>Shop</span>
+                  <span>Blog</span>
+                  <span>Pages</span>
+                  <span>Docs</span>
+              </div>
+               <div class="head-bi"> 
+                 <span class="bi bi-search"></span>
+                 <span class="bi bi-person"></span>
+                 <span class="bi bi-heart"></span>
+                 <span class="bi bi-cart"></span>
+                </div>
+           </div>
+            <div class="brand-title">
+                <span class="bi bi-star-fill"></span>
+                HAPPY HOLIDAY DEALS ON EVERYTHING
+                <span class="bi bi-star-fill"></span>
+            </div>
+        </header>
+        <section>
+            section
+        </section>
+        <main>
+            <div class="main-container">
+               <div class="banner-women">
+                  <div>
+                       <h1>Women</h1>
+                  </div>
+                   <div>
+                       <button>
+                          Shop Women
+                          <span class="bi bi-arrow-right"></span>
+                       </button>
+                   </div>
+               </div>
+               <div class="banner-women">
+                <div>
+                    <h1>Women</h1>
+                </div>
+                <div>
+                    <button>
+                        Shop Women
+                        <span class="bi bi-arrow-right"></span>
+                    </button>
+                </div>
+               </div>
+               <div class="banner-women">
+                <div>
+                    <h1>Women</h1>
+                </div>
+                <div>
+                    <button>
+                        Shop Women
+                        <span class="bi bi-arrow-right"></span>
+                    </button>
+                </div>
+               </div>
+            </div>
+        </main>
+        <footer>
+            &copy; copyright 2022
+        </footer>
+    </div>
+</body>
+</html>
